@@ -9,7 +9,7 @@ type PadProps = {
   isActive: boolean;
 };
 
-export function Pad({ id, color, sound, onPress, isActive }: PadProps) {
+export function Pad({ color, sound, onPress, isActive }: PadProps) {
   const handleKeyDown = useCallback(
     (event: React.KeyboardEvent) => {
       if (event.key === "Enter" || event.key === " ") {
